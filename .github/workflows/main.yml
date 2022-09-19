@@ -19,12 +19,6 @@ jobs:
       
       - name: Lint the PyLint
         run: make lint
-      
-      - name: Deploy the app
-        run: python app.py
-        
-      - name: Make Prediction
-        run: bash make_prediction.sh
         
       - name: Test with PyTest
         run: make test
